@@ -40,7 +40,6 @@
     </config-file>
     <source-file src="src/ios/CDVAlloBonjour.m"/>
     <header-file src="src/ios/CDVAlloBonjour.h"/>
-    <header-file src="src/ios/NetServiceBrowserDelegate.h"/>
   </platform>
 </plugin>
 
