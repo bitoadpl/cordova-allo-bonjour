@@ -32,8 +32,8 @@ Don’t forget to stop discovery with `AlloBonjour.stopDiscovery`, using a timeo
       function(services) {
         var i, service;
 
-        for (i; i < services.length; i++) {
-          service = services[i];
+        for (i; i < services.services.length; i++) {
+          service = services.services[i];
           console.log("Found: " + service.name + " " + service.type + " " + service.domain);
         }
       },
@@ -49,7 +49,7 @@ Don’t forget to stop discovery with `AlloBonjour.stopDiscovery`, using a timeo
 
 `AlloBonjour.stopDiscovery` can be called to stop an ongoing discovery.
 
-    AlloBonjour.stopDiscovery();
+    AlloBonjour.stopDiscovery(function() {}, function() {});
 
 
 ### resolve(serviceName, serviceType, domain)
