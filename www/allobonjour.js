@@ -31,7 +31,7 @@ var AlloBonjour = {
   startDiscovery: function (serviceType, domain, successCallback, errorCallback) {
     exec(successCallback, errorCallback, "AlloBonjour", "startDiscovery", [serviceType, domain]);
   },
-  stopDiscovery: function () {
+  stopDiscovery: function (successCallback, errorCallback) {
     exec(successCallback, errorCallback, "AlloBonjour", "stopDiscovery");
   },
   resolve: function (name, type, domain, successCallback, errorCallback) {
